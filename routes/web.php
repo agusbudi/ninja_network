@@ -10,10 +10,10 @@ Route::get('/', function () {
 //setting route
 Route::get('/ninjas', function(){
     $ninjas = [
-        ["id" => "1", "name" => "Naruto", "skill" => "Ninjutsu", "level" => 9],
-        ["id" => "2", "name" => "Metal Lee", "skill" => "Taijutsu", "level" => 8],
-        ["id" => "3", "name" => "Sasuke", "skill" => "Genjutsu", "level" => 7],
-        ["id" => "4", "name" => "Orochimaru", "skill" => "Senjutsu", "level" => 6]
+        ["id" => "1", "name" => "Naruto", "expertise" => "Ninjutsu", "skill" => 9],
+        ["id" => "2", "name" => "Metal Lee", "expertise" => "Taijutsu", "skill" => 8],
+        ["id" => "3", "name" => "Sasuke", "expertise" => "Genjutsu", "skill" => 7],
+        ["id" => "4", "name" => "Orochimaru", "expertise" => "Senjutsu", "skill" => 6]
     ];
 
     return view('ninjas.index', ["greeting" => "Hello", "ninjas" => $ninjas]);

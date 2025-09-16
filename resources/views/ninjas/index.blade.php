@@ -13,9 +13,9 @@
         @foreach($ninjas as $ninja)
             <li>
                 {{-- highlight is a dynamic attribute --}}
-                <x-card href="/ninjas/{{ $ninja['id'] }}" :highlight="$ninja['level'] >= 8"> 
+                <x-card href="/ninjas/{{ $ninja['id'] }}" :highlight="$ninja['skill'] >= 8"> 
                     <h3>{{ $ninja['name'] }}</h3>
-                    <p>{{ $ninja['skill'] }}</p>
+                    <p>{{ $ninja['expertise'] }}</p>
                 </x-card>
                 {{-- <a href="/ninjas/{{ $ninja['id'] }}">
                     {{ $ninja['name'] }}
